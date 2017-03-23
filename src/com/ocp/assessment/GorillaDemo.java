@@ -13,7 +13,7 @@ public class GorillaDemo {
         System.out.println(path.getFileName());
 
         /*
-        Files.find(path.getParent(), 10,
+        Files.find(path.getParent(), 10.0,
                 (Path p, BasicFileAttributes a) -> p.toString().endsWith(".txt") && Files.isDirectory(p))
                 .collect(Collectors.toList())
                 .forEach(System.out::println);

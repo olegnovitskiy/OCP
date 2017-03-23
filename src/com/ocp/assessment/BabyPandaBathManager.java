@@ -9,7 +9,8 @@ public class BabyPandaBathManager {
     public static void wait(CyclicBarrier cb) {
         try {
             cb.wait();
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e) {
             ;
         }
 //        catch (InterruptedException | BrokenBarrierException e) {

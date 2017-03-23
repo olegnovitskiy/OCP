@@ -40,6 +40,29 @@ class Lion extends Animal {
     }
 
     private void addMeat() {
+        Bird bird = new Bird();
         System.out.println("Add meat to lion");
+
+    }
+}
+
+class Demo {
+    int a;
+
+    private int method1() {
+        return 1;
+    }
+
+    static class MyStatic {
+        private void method2() {
+//            System.out.println(method1());
+            new Demo().method1();
+            System.out.println(new Demo().a);
+        }
+    }
+
+    public static void main(String[] args) {
+        MyStatic myStatic = new MyStatic();
+
     }
 }
