@@ -53,7 +53,7 @@ class Demo {
         return 1;
     }
 
-    static class MyStatic {
+    public static class MyStatic {
         private void method2() {
 //            System.out.println(method1());
             new Demo().method1();
