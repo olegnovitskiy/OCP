@@ -1,5 +1,7 @@
 package com.ocp.chapter2.strategy;
 
+import java.util.List;
+
 class Car {
     private String name;
     private CarType type;
@@ -42,4 +44,14 @@ class Car {
                 ", type=" + type +
                 '}';
     }
+}
+
+@FunctionalInterface
+interface A {
+    void m1(List<Double> list);
+}
+
+@FunctionalInterface
+interface B extends A {
+    void m1(List list);
 }

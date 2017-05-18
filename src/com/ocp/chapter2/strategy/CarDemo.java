@@ -1,6 +1,7 @@
 package com.ocp.chapter2.strategy;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class CarDemo {
@@ -47,5 +48,12 @@ class CarDemo {
         if (twentyKCars != null) {
             twentyKCars.forEach(System.out::println);
         }
+
+        // Lambda example
+        Searchable s = (Car c) -> c.getCostUSD() > 20000;
+
+        List<String> list = Arrays.asList("Hello","all");
+        //list.add("student");
+        System.out.println(list);
     }
 }
