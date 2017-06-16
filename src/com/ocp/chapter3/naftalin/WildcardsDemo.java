@@ -53,5 +53,6 @@ public class WildcardsDemo {
         List<Number> nums2 = new ArrayList<>();
         double sum = sumCount(nums2, 5);
         assert sum == 10.0;
+
     }
 }
